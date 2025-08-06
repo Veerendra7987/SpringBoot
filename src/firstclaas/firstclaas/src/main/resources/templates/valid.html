@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/process}" method="post" th:object="${custdata}">
+   <label for="name">Name</label>
+  <input type="text" id="name" name="name" th:value="${custdata.name}">
+  <p th:each="err : ${#fields.errors('name')}" th:text="${err}"></p>
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" th:value="${custdata.email}">
+  <p th:each="err : ${#fields.errors('email')}" th:text="${err}"></p>
+  <input type="submit">
+</form>
+</body>
+</html>

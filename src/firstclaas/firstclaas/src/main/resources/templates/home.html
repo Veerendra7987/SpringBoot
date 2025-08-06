@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<h1> Lets Call the Fragment </h1>
+<h1> Fragment </h1>
+<div th:replace="header :: frag1(${name},${add})">
+</div>
+</body>
+</html>

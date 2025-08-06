@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = "stylesheet" th:href="@{style.css)">
+</head>
+<body>
+
+<h1> BANSAL HOSPITAL </h1>
+<div th:replace="${content}"></div>
+<h3> END COPY RIGHT </h3>
+
+</body>
+</html>

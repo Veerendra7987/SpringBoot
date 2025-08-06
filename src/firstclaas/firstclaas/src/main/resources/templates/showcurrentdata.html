@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:action="@{/savedata}" th:object="${hero}">
+  <input type="hidden" id="id" th:field="*{id}">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" th:field="*{name}">
+  <label for="relation">Relation</label>
+  <input type="text" id="relation" name="relation" th:field="*{relation}">
+  <label for="nature">Nature</label>
+  <input type="text" id="nature" name="nature" th:field="*{nature}">
+  <input type="submit">
+</form>
+</body>
+</html>

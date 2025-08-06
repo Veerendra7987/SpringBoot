@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Passing Data to Html</h1>
+<p th:text="'Value of a is '+${a}"></p>
+<p th:text="'Value of a is '+${b}"></p>
+<p th:text="'Value of a is = '+${a+b}"></p>
+
+<h3 th:text="${val1}"></h3>
+<h3 th:text="${val2}"></h3>
+<h3 th:text="${val3}"></h3>
+
+<h3 th:text="${age}"></h3>
+<div th:if="${age>=18}">
+    <p You Can Vote ></p>
+ </div>
+<div th:unless="${age>18}">
+    <p> You Can vote</p>
+</div>
+</body>
+</html>

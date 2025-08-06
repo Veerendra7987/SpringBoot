@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${list[0].id}">
+</p>
+<p th:text="${list[0].name}">
+</p>
+<p th:text="${list[0].relation}">
+</p>
+<p th:text="${list[0].nature}">
+</p>
+<li th:each="r:${list}">
+    <span th:text="${r.name}"></span>
+    <span th:text="${r.relation}"></span>
+    <span th:text="${r.nature}"></span>
+</li>
+</body>
+</html>
