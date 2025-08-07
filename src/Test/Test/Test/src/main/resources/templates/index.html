@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${isPresent} ?'active' : Inactive"></h1>
+<h1 th:text="${isPresent} ?: 'Data Not Save'"></h1>
+<h1 th:if="${age}>=18">You can vote</h1>
+<h1 th:if="${age}<=18">you can not vote</h1>
+<div th:switch="${demo}">
+    <p th:case="'active'">Active User</p>
+    <p th:case="'inactive'">Inactive User</p>
+    <p th:case="*">Unkown Statusr</p>
+</div>
+</body>
+</html>
