@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="datasaves">
+  <label for="cname" >Name</label><br>
+  <input type="text" id="cname" name="cname"><br>
+  <label for="caddress" >address</label><br>
+  <input type="text" id="caddress" name="caddress"><br>
+
+  <select name="cstate" id="cstate">
+      <option>Sagar</option>
+      <option>Bhopal</option>
+      <option>Deori</option>
+  </select>
+<label>Gender</label>
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">female
+    <label>Languges</label>
+    <input type="checkbox" name="english" value="english">English
+    <input type="checkbox" name="german" value="german">German
+    <input type="checkbox" name="spanish" value="Spanish">Spanish
+  <input type="submit">
+</form>
+
+</body>
+</html>
