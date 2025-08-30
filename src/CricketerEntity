@@ -1,0 +1,91 @@
+package com.example.Test.DataSavePostgresSql;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="Cricketer")
+public class CricketerEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    int id;
+    String name,address,state;
+    String gender,english,german,spanish;
+
+    public CricketerEntity(int id, String name, String address, String state, String gender, String english, String german, String spanish) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.state = state;
+        this.gender = gender;
+        this.english = english;
+        this.german = german;
+        this.spanish = spanish;
+    }
+
+    public CricketerEntity() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getEnglish() {
+        return english;
+    }
+
+    public void setEnglish(String english) {
+        this.english = english;
+    }
+
+    public String getGerman() {
+        return german;
+    }
+
+    public void setGerman(String german) {
+        this.german = german;
+    }
+
+    public String getSpanish() {
+        return spanish;
+    }
+
+    public void setSpanish(String spanish) {
+        this.spanish = spanish;
+    }
+}
