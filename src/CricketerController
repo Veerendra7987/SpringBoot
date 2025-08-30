@@ -1,0 +1,34 @@
+package com.example.Test.DataSavePostgresSql;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class CricketerController {
+
+    @Autowired
+    CricketerRepositry cricketerRepositry;
+
+    @GetMapping("/form")
+    public String form() {
+
+        return "Cricketer";
+    }
+    @PostMapping("/datasaves")
+    public String save(@RequestParam("cname") String name,@RequestParam("caddress") String address,@RequestParam("cstate") String state,String gender,String english,String german,String spanish) {
+        CricketerEntity C = new CricketerEntity();
+        C.setName(name);
+        C.setAddress(address);
+        C.setState(state);
+        C.setGender(gender);
+        C.setEnglish(english);
+        C.setGerman(german);
+        C.setSpanish(spanish);
+        cricketerRepositry.save(C);
+       return "datasave";
+    }
+}
+
