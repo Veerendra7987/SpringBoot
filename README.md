@@ -6,7 +6,7 @@
 
 
 - `src/main/java` — your Java source code (controllers, services, repositories, models etc.).
-- `src/main/resources` — configuration, static assets, templates.
+- `src/main/resources` — configuration, static assets, templates. 
 - `src/test` — unit / integration tests.
 - `pom.xml` or `build.gradle` — build configuration.
 - `.gitignore` — files/folders to ignore in version control.
