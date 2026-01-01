@@ -2,7 +2,7 @@
 
 > A sample Spring Boot application showcasing backend/API development with Java and Spring Boot.
 
-## 📂 Repository Structure
+## 📂 Repository Structure 
 
 
 - `src/main/java` — your Java source code (controllers, services, repositories, models etc.).
